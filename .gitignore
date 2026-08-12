@@ -1,0 +1,11 @@
+# dependencies & build cache
+node_modules/
+.next/
+
+# local artifacts
+corehold-site.zip
+*.log
+.DS_Store
+
+# note: out/ (the built static site) is committed on purpose,
+# so the deployable site always lives in the repo alongside the source.
