@@ -26,6 +26,10 @@ const personLd = {
   email: 'audit@corehold.systems',
   url: `${SITE_URL}/card`,
   address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressCountry: 'AE' },
+  sameAs: [
+    'https://www.linkedin.com/company/corehold/',
+    'https://x.com/coreholdsystems',
+  ],
 };
 
 export default function CardPage() {

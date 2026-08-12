@@ -216,6 +216,37 @@ export default function CardClient() {
               </a>
             </div>
 
+            {/* social */}
+            <div className="mt-3 grid grid-cols-2 gap-3">
+              <a
+                href="https://www.linkedin.com/company/corehold/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost justify-center !gap-2 !px-2 !py-2.5"
+                aria-label="Corehold on LinkedIn"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-ember">
+                  <rect x="3" y="3" width="18" height="18" stroke="currentColor" strokeWidth="1.7" />
+                  <rect x="7" y="10.5" width="2.4" height="7" fill="currentColor" />
+                  <rect x="7" y="6.5" width="2.4" height="2.4" fill="currentColor" />
+                  <path d="M12.6 17.5v-7h2.3v1c.5-.7 1.3-1.2 2.4-1.2 1.8 0 2.7 1.1 2.7 3.2v4h-2.4v-3.6c0-1-.4-1.5-1.2-1.5s-1.4.6-1.4 1.6v3.5z" fill="currentColor" />
+                </svg>
+                <span className="text-[0.62rem]">LinkedIn</span>
+              </a>
+              <a
+                href="https://x.com/coreholdsystems"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost justify-center !gap-2 !px-2 !py-2.5"
+                aria-label="Corehold on X"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-ember">
+                  <path d="M4 4l16 16M20 4L4 20" stroke="currentColor" strokeWidth="2.2" />
+                </svg>
+                <span className="text-[0.62rem]">@coreholdsystems</span>
+              </a>
+            </div>
+
             <dl className="mt-5 space-y-2.5 border-t border-line pt-5">
               <div className="flex items-baseline justify-between gap-3">
                 <dt className="mono-label shrink-0">Mobile</dt>
