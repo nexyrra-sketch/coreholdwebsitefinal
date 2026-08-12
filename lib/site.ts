@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://corehold.com';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://corehold.systems';
 
 export const SITE_NAME = 'Corehold';
 export const SITE_TITLE = 'Corehold — Own the system your business runs on';

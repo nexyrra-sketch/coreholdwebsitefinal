@@ -7,9 +7,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${SITE_URL}/`,
-      lastModified: new Date('2026-08-11'),
+      lastModified: new Date('2026-08-12'),
       changeFrequency: 'monthly',
       priority: 1,
+    },
+    {
+      url: `${SITE_URL}/card/`,
+      lastModified: new Date('2026-08-12'),
+      changeFrequency: 'yearly',
+      priority: 0.6,
     },
   ];
 }

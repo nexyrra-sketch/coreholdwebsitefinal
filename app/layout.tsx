@@ -59,6 +59,8 @@ const jsonLd = {
   description: SITE_DESCRIPTION,
   slogan: 'Own the system your business runs on. Stop renting it.',
   telephone: '+971503953988',
+  founder: { '@type': 'Person', name: 'Ghassan Adil', jobTitle: 'Founder' },
+  email: 'audit@corehold.systems',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+971-50-395-3988',

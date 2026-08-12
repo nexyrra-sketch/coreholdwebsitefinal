@@ -619,6 +619,46 @@ body.sys-dead .direct-line { opacity: 0 !important; pointer-events: none !import
   .sys-ring { opacity: 0; }
 }
 
+/* ————— The founder card: scanned in, then held ————— */
+
+@keyframes card-scan {
+  0% { top: 0; opacity: 0; }
+  8% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { top: calc(100% - 2px); opacity: 0; }
+}
+.card-scanline {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 2px;
+  background: var(--color-ember);
+  box-shadow: 0 0 18px 3px rgba(217, 99, 43, 0.5);
+  animation: card-scan 1.15s cubic-bezier(0.4, 0, 0.4, 1) 0.25s both;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.card-stage {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.65s cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+.card-stage.on { opacity: 1; transform: none; }
+
+@keyframes boot-blink { 50% { opacity: 0; } }
+.boot-caret::after {
+  content: '▌';
+  color: var(--color-ember);
+  animation: boot-blink 0.9s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-scanline { animation: none; opacity: 0; }
+  .card-stage { opacity: 1; transform: none; transition: none; }
+  .boot-caret::after { animation: none; }
+}
+
 /* Skip link */
 .skip-link {
   position: fixed;

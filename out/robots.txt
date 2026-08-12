@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://corehold.com/sitemap.xml
+Sitemap: https://corehold.systems/sitemap.xml
